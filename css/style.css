@@ -2,6 +2,7 @@
   width: 150px;
   height: 150px;
   border: 5px solid;
+  border-radius: 25px;
   
   transform: translate(80%, 40%) rotatez(225deg);
 }
@@ -40,4 +41,19 @@
 
 @keyframes BoxAnimation4{
   from{transform: translate(-500px, -1000px)}
+}
+
+/* BORDER */
+
+#button1{
+  font-size: 50px;
+  background-color: blue;
+  border-radius: 25px;
+}
+
+#button2{
+  font-size: 50px;
+  background-color: red;
+  border-radius: 25px;
+  margin-top: 25px;
 }
