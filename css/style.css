@@ -1,3 +1,8 @@
+body{
+  font-family: Verdana;
+  text-align: center;
+}
+
 .box{
   width: 150px;
   height: 150px;
@@ -81,4 +86,22 @@
 
 .buttons:hover{
   background-color: blue;
+}
+
+/* BORDER */
+
+#button3{
+  font-size: 3em;
+  padding: 5px 25px;
+  border-radius: 5px;
+}
+
+.labels{
+  font-size: 3em;
+}
+
+/* BORDER */
+
+#submit3{
+  font-size: 1.2em;
 }

@@ -63,3 +63,67 @@ reset.onclick = function(){
 
 //BORDER
 
+const button3 = document.getElementById("button3");
+const label2 = document.getElementById("label2");
+const label3 = document.getElementById("label3");
+const label4 = document.getElementById("label4");
+
+const min1 = 1;
+const max1 = 100;
+
+let randomnum1;
+let randomnum2;
+let randomnum3;
+
+button3.onclick = function(){
+  randomnum1 = Math.floor(Math.random() * max1) + min1;
+  randomnum2 = Math.floor(Math.random() * max1) + min1;
+  randomnum3 = Math.floor(Math.random() * max1) + min1;
+  label2.textContent = randomnum1;
+  label3.textContent = randomnum2;
+  label4.textContent = randomnum3;
+}
+
+// BORDER
+
+const checkbox1 = document.getElementById("checkbox1");
+const humanButton = document.getElementById("humanButton");
+const trexButton = document.getElementById("trexButton");
+const birdButton = document.getElementById("birdButton");
+
+const submit3 = document.getElementById("submit3");
+
+const subResult = document.getElementById("subResult");
+const humanResult = document.getElementById("subResult");
+
+
+submit3.onclick = function(){
+  if(checkbox1.checked){
+    subResult.textContent = "You are...";
+    
+    if(humanButton.checked){
+      humanResult.textContent = "You are a Human!";
+    }
+    else if(trexButton.checked){
+      humanResult.textContent = "You are a T-Rex!";
+    }
+    else if(birdButton.checked){
+      humanResult.textContent = "You are a Bird!";
+    }
+  }
+  else{
+    subResult.textContent = "Please press the checkbox";
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
