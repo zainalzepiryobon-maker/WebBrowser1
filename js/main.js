@@ -117,10 +117,13 @@ submit3.onclick = function(){
   
 }
 
+// BORDER
 
+// let username2 = window.prompt(`what is your username?`);
 
+// username2 = username2.trim().charAt(0).toUpperCase() + username2.trim().slice(1).toLowerCase();
 
-
+// console.log(username2)
 
 
 
