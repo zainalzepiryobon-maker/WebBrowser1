@@ -135,18 +135,28 @@ let running = true;
 
 while(running){
 
-guess1 = nwindow.prompt(`Guess a number between ${min2} - ${max2}`);
-guess1 = Number(guess);
+  guess1 = window.prompt(`Guess a number between ${min2} - ${max2}`);
+  guess1 = Number(guess1);
 
-if(isNaN(guess1)){
-  window.alert("Please enter a valid number");
-}
-else if (guess < min2 || guess > max2){
-  window.alert("Please enter a valid number");
-}
-else{
-  
+  if(isNaN(guess1)){
+    window.alert("Please enter a valid number");
+  }
+  else if (guess1 < min2 || guess1 > max2){
+    window.alert("Please enter a valid number");
+  }
+  else{
+    attempts1++;
+    if(guess1 < answer){
+      window.alert("TOO LOW! Try again");
+    }
+    else if(guess1 > answer){
+      window.alert("TOO HIGH! Try again");
+    }
+    else{
+      window.alert(`CORRECT! The answer was ${guess1}. It took you ${attempts1} attempts`);
+      running = false;
+    }
+  }
 }
 
-  running = false
-}
+// BORDER
