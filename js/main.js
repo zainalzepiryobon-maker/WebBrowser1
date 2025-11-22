@@ -125,23 +125,25 @@ submit3.onclick = function(){
 
 // console.log(username2)
 
+const min2 = 1;
+const max2 = 100;
+const answer = Math.floor(Math.random() * (max2 - min2 + 1)) + min2;
 
+let attempts1 = 0;
+let guess1;
+let running = true;
 
+while(running){
 
+guess1 = nwindow.prompt(`Guess a number between ${min2} - ${max2}`);
+guess1 = Number(guess);
 
+if(isNaN(guess1)){
+  window.alert("Please enter a valid number");
+}
+else if (guess < min2 || guess > max2){
+  window.alert("Please enter a valid number");
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  running = false
+}

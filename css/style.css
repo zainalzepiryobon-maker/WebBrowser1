@@ -14,7 +14,8 @@ body{
 
 #box1{
   animation-name: BoxAnimation1;
-  animation-duration: 1s;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0.5, -2, 0.5, 2);
 }
 
 @keyframes BoxAnimation1{
@@ -23,7 +24,8 @@ body{
 
 #box2{
   animation-name: BoxAnimation2;
-  animation-duration: 1.5s;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0.5, -2, 0.5, 2);
 }
 
 @keyframes BoxAnimation2{
@@ -32,7 +34,8 @@ body{
 
 #box3{
   animation-name: BoxAnimation3;
-  animation-duration: 1.25s;
+  animation-duration: 3.5s;
+  animation-timing-function: cubic-bezier(0.5, -2, 0.5, 2);
 }
 
 @keyframes BoxAnimation3{
@@ -41,7 +44,8 @@ body{
 
 #box4{
   animation-name: BoxAnimation4;
-  animation-duration: 1.75s;
+  animation-duration: 4.5s;
+  animation-timing-function: cubic-bezier(0.5, -2, 0.5, 2);
 }
 
 @keyframes BoxAnimation4{
@@ -77,7 +81,6 @@ body{
 .buttons{
   padding: 10px 20px;
   font-size: 1.5em;
-  font-color: white;
   background-color: cyam;
   border-radius: 5px;
   cursor: pointer;
@@ -105,31 +108,3 @@ body{
 #submit3{
   font-size: 1.2em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
