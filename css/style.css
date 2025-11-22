@@ -43,8 +43,6 @@
   from{transform: translate(-500px, -1000px)}
 }
 
-/* BORDER */
-
 #button1{
   font-size: 50px;
   background-color: blue;
@@ -56,4 +54,29 @@
   background-color: red;
   border-radius: 25px;
   margin-top: 25px;
+}
+
+#countLabel{
+  display: block;
+  text-align: center;
+  font-size: 10em;
+  font-family: Helvetica;
+}
+
+#buttonContainer{
+  text-align: center;
+}
+
+.buttons{
+  padding: 10px 20px;
+  font-size: 1.5em;
+  font-color: white;
+  background-color: cyam;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.buttons:hover{
+  background-color: blue;
 }
