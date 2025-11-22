@@ -144,6 +144,9 @@ if(isNaN(guess1)){
 else if (guess < min2 || guess > max2){
   window.alert("Please enter a valid number");
 }
+else{
+  
+}
 
   running = false
 }
